@@ -1,0 +1,217 @@
+/**
+ * Custom Styles here.
+ *
+ * ref：https://v1.vuepress.vuejs.org/config/#index-styl
+ */
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 5px dotted #ee5f53;
+}
+
+ body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+textarea {
+    font-family: "Ubuntu", sans-serif;
+}
+
+::selection {
+  color:#173353;
+  background: #ee5f53;
+}
+
+.home .hero img
+  max-width 750px !important
+  max-height: 501px !important
+
+@media (max-width: 815px) {
+.home .hero img {
+  max-width 100% !important
+  max-height: 501px !important
+}
+}
+
+html, body {
+  background-color: #efe8df !important;
+}
+
+.navbar, .navbar .links {
+  background-color: #173353 !important;
+}
+
+.navbar .nav-links a, .navbar .site-name {
+  color: #ffffff !important;
+}
+
+.navbar .sidebar-button svg path {
+  fill: #ffffff;
+}
+
+@media (max-width: 719px) {
+  .navbar .logo {
+      display: none !important;
+  }
+}
+
+@media (min-width: 720px) {
+  .nav-item:first-child {
+      display: none !important;
+  }
+  .nav-item:nth-child(2) {
+      margin-left: 0 !important;
+  }
+}
+
+.sidebar {
+  background-color: #efe8df !important;
+}
+
+.description {
+  color: #6d6e71 !important;
+}
+
+.footer {
+  color: #173353 !important;
+}
+
+a.header-anchor
+    display: none
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.pulse-hover:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-3{
+  flex: 3
+}
+
+.flex-1{
+  flex: 1
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.mt-50 {
+  margin-top: 40px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
